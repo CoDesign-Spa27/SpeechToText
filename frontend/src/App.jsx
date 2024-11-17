@@ -31,7 +31,7 @@ const SpeechToText = () => {
           const formData = new FormData();
           formData.append('audio', audioBlob);
           
-          const response = await fetch('http://localhost:3000/upload', {
+          const response = await fetch('https://speechtotext-280m.onrender.com/upload', {
             method: 'POST',
             body: formData,
           });
